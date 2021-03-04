@@ -1,31 +1,26 @@
-import Reacr from "react"
+import React from "react"
 
 const user = (props) => {
     return (
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <img src={props.image}></img>
+                    <p><u>{props.first_name}  {props.last_name}</u></p>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                    <p src={props.name}></p>
+                    <p>{props.gender}</p>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                    <p>{props.phone}</p>
+                    <p>Email: <a href={props.email}>{props.email}</a></p>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                    <a href={props.email}>{props.email}</a>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col">
-                    <p>{props.dob}</p>
+                    <p>IP address: {props.ip_address}</p>
                 </div>
             </div>
         </div>
